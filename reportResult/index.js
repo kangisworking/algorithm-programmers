@@ -52,22 +52,14 @@ function solution(id_list, report, k) {
   return answer;
 }
 
-let id_list = ["muzi", "frodo", "apeach", "neo"];
-let report = [
-  "muzi frodo",
-  "apeach frodo",
-  "frodo neo",
-  "muzi neo",
-  "apeach muzi",
+let input = [
+  ["muzi", "frodo", "apeach", "neo"],
+  ["muzi frodo", "apeach frodo", "frodo neo", "muzi neo", "apeach muzi"],
+  2,
 ];
-let k = 2;
-let answer = solution(id_list, report, k);
+let answer = solution(input[0], input[1], input[2]);
 console.log("answer :>> ", answer);
 
-let input = [
-  ["con", "ryan"],
-  ["ryan con", "ryan con", "ryan con", "ryan con"],
-  3,
-];
+input = [["con", "ryan"], ["ryan con", "ryan con", "ryan con", "ryan con"], 3];
 answer = solution(input[0], input[1], input[2]);
 console.log("answer :>> ", answer);
